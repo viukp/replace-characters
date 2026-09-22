@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字置き換え</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="popup-header">
+      <h1>文字置き換え</h1>
+      <p>文章内の文字をまとめて置き換えます。</p>
+    </header>
+
+    <section class="replacement-settings" aria-labelledby="replacement-settings-title">
+      <h2 id="replacement-settings-title">置き換え設定</h2>
+
+      <div class="setting-group">
+        <label class="field-label" for="before-text">置き換える文字</label>
+        <textarea
+          id="before-text"
+          class="text-input"
+          rows="3"
+          placeholder="例：古い文字"
+        ></textarea>
+        <label class="checkbox-label">
+          <input id="before-newline" type="checkbox">
+          <span>改行にする</span>
+        </label>
+      </div>
+
+      <div class="replace-arrow" aria-hidden="true">↓</div>
+
+      <div class="setting-group">
+        <label class="field-label" for="after-text">置き換え後の文字</label>
+        <textarea
+          id="after-text"
+          class="text-input"
+          rows="3"
+          placeholder="例：新しい文字"
+        ></textarea>
+        <label class="checkbox-label">
+          <input id="after-newline" type="checkbox">
+          <span>改行にする</span>
+        </label>
+      </div>
+
+      <button id="replace-button" class="replace-button" type="button">
+        置き換える
+      </button>
+    </section>
+
+    <section class="text-section" aria-labelledby="input-text-title">
+      <div class="section-heading">
+        <h2 id="input-text-title">入力する文章</h2>
+        <span class="section-badge">編集できます</span>
+      </div>
+      <textarea
+        id="input-text"
+        class="large-textarea"
+        placeholder="ここに処理したい文章を入力してください。"
+      ></textarea>
+    </section>
+
+    <section class="text-section" aria-labelledby="result-text-title">
+      <div class="section-heading">
+        <h2 id="result-text-title">置き換え結果</h2>
+        <span class="section-badge readonly-badge">読み取り専用</span>
+      </div>
+      <textarea
+        id="result-text"
+        class="large-textarea result-textarea"
+        placeholder="置き換え結果がここに表示されます。"
+        readonly
+        aria-readonly="true"
+      ></textarea>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

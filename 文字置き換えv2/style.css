@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    "Segoe UI",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    Meiryo,
+    sans-serif;
+  color: #1f2937;
+  background: #f4f6f8;
+}
+
+body {
+  width: 420px;
+  min-width: 420px;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+.popup {
+  padding: 18px;
+}
+
+.popup-header {
+  margin-bottom: 16px;
+}
+
+.popup-header h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.popup-header p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+section {
+  margin: 0 0 16px;
+}
+
+.replacement-settings,
+.text-section {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.replacement-settings h2,
+.section-heading h2 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.setting-group {
+  margin-top: 12px;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.text-input,
+.large-textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #111827;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.55;
+  outline: none;
+  resize: vertical;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.text-input {
+  min-height: 74px;
+}
+
+.large-textarea {
+  min-height: 180px;
+}
+
+.text-input:focus,
+.large-textarea:focus {
+  border-color: #6b7280;
+  box-shadow: 0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #374151;
+}
+
+.replace-arrow {
+  margin: 8px 0;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.replace-button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #1f2937;
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    transform 0.05s ease;
+}
+
+.replace-button:hover {
+  background: #111827;
+}
+
+.replace-button:active {
+  transform: translateY(1px);
+}
+
+.text-section {
+  padding-bottom: 12px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.section-badge {
+  flex: 0 0 auto;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.readonly-badge {
+  background: #eef2f7;
+  color: #4b5563;
+}
+
+.result-textarea {
+  background: #f8fafc;
+  cursor: default;
+}
+
+.result-textarea::placeholder {
+  color: #9ca3af;
+}
